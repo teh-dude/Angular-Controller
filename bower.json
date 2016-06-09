@@ -1,0 +1,24 @@
+{
+  "name": "Angular-Controller",
+  "homepage": "https://github.com/teh-dude/Angular-Controller",
+  "authors": [
+    "Eduardo Anthony"
+  ],
+  "description": "Angular project with a controller",
+  "main": "index.html",
+  "keywords": [
+    "AngularJS"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.6"
+  }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="todoApp">
+<head>
+	<title>Angular Controller</title>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="controllers.js"></script>
+</head>
+<body>
+
+	<h2>My TODO List</h2>
+
+	<div ng-controller="todoController as todo">
+		<span> {{todo.list.lenght}} TODOS</span>
+		<a href="#" ng-click="todo.archive()">delete</a>
+
+		<ul>
+			<li ng-repeat="task in todo.list">
+				<input type="checkbox" ng-model="task.done">
+				<span class="done-{{todo.done}}">{{task.text}}</span>
+			</li>
+		</ul>	
+		<form ng-submit=todo.add()>
+			<input ng-model="todo.todoText" type="text" placeholder="Add new todo here">
+			<input type="submit" value="Add">
+		</form>
+	</div>	
+</body>
+</html>
